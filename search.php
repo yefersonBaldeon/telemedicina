@@ -14,7 +14,7 @@
     <div class="container">
         <div class="col-4">
 
-            <form action="enviar_formulario.php" method="post">
+            <form action="search.php" method="post">
                 <div class="mt-5 mb-3">
                     <label for="usuario" class="form-label">Paciente: </label>
                     <input type="text" class="form-control" id="auto" name="dato" maxlength="8" required>
@@ -42,33 +42,45 @@
 
                 <tr>
 
-                    <th>Código</th>
                     <th>DNI</th>
-                    <th>Nombres</th>
-                    <th>Apellidos</th>
-                    <th></th>
-                    <th></th>
+
+                    <th>Primer Nombre</th>
+                    <th>Segundo Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Número de celular</th>
+                    <th>Consulta</th>
+                    <th>Registro</th>
                 </tr>
 
 
                 <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-                include("enviar.php");
-                while ($arreglo = mysqli_fetch_array($resultado2)) {
                 ?>
 
 
-                    <tr>
+                    <?php
 
-                        <td><?php echo $arreglo[0] ?></th>
-                        <td><?php echo $arreglo[1] ?></th>
-                        <td><?php echo $arreglo[2] ?></th>
-                        <td><?php echo $arreglo[3] ?></th>
-                        <td><a href="update.php?idd=<?php echo $arreglo[0]; ?>" class="btn btn-info">Editar</a></td>
-                        <td><a href="delete.php?idd=<?php echo $arreglo[0]; ?>" class="btn btn-danger">Eliminar</a></td>
+                    include("enviar2.php");
+                    while ($arreglo = mysqli_fetch_array($resultado2)) {
+                    ?>
 
 
-                    </tr>
+                        <tr>
+
+                            <td><?php echo $arreglo[0] ?></th>
+                            <td><?php echo $arreglo[1] ?></th>
+                            <td><?php echo $arreglo[2] ?></th>
+                            <td><?php echo $arreglo[3] ?></th>
+                            <td><?php echo $arreglo[4] ?></th>
+                            <td><?php echo $arreglo[5] ?></th>
+                            <td><a target="_blank" href="consulta.php?dni=<?php echo $arreglo[0];?>" class="btn btn-primary">Generar</a></td>
+                            <td><a target="_blank" href="registro.php?dni=<?php echo $arreglo[0];?>" class="btn btn-success">Registro</a></td>
+                        </tr>
+
+                    <?php } ?>
+
 
                 <?php } ?>
 

@@ -24,6 +24,8 @@
                     <input type="submit" class="btn btn-primary" value="Enviar">
                 </div>
 
+                
+
 
             </form>
 
@@ -75,7 +77,7 @@
                             <td><?php echo $arreglo[3] ?></th>
                             <td><?php echo $arreglo[4] ?></th>
                             <td><?php echo $arreglo[5] ?></th>
-                            <td><a target="_blank" href="consulta.php?dni=<?php echo $arreglo[0];?>" class="btn btn-primary">Generar</a></td>
+                            <td><a target="_blank" href="consulta.php?dni=<?php echo $arreglo[0];?>" class="btn btn-primary">Generar Consulta</a></td>
                             <td><a target="_blank" href="registro.php?dni=<?php echo $arreglo[0];?>" class="btn btn-success">Registro</a></td>
                         </tr>
 

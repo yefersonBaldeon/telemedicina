@@ -67,7 +67,7 @@ $arreglo = mysqli_fetch_array($resultado2);
 
                     <div class="mb-3">
                         <label for="usuario" class="form-label">Fecha:</label>
-                        <input type="date" class="form-control text-primary" id="fechaInput" name="fecha" readonly required>
+                        <input type="date" class="form-control text-primary" id="fechaInput" name="fecha" required>
                     </div>
 
 

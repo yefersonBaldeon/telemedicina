@@ -15,31 +15,30 @@
                 <tr>
 
                     <th>DNI</th>
-                    <th>Primer Nombre</th>
-                    <th>Segundo Nombre</th>
-                    <th>Primer Apellido</th>
-                    <th>Segundo Apellido</th>
-                    <th>Numero</th>
-                    <th></th>
+                    <th>Años</th>
+                    <th>Peso</th>
+                    <th>Temperatura</th>
+                    <th>Fecha</th>
                     <th></th>
                 </tr>
 
 
                 <?php
 
-                include("enviar.php");
+                include("enviar3.php");
                 while ($arreglo = mysqli_fetch_array($resultado2)) {
                 ?>
 
 
                     <tr>
 
-                        <td><?php echo $arreglo[0] ?></th>
                         <td><?php echo $arreglo[1] ?></th>
                         <td><?php echo $arreglo[2] ?></th>
                         <td><?php echo $arreglo[3] ?></th>
                         <td><?php echo $arreglo[4] ?></th>
                         <td><?php echo $arreglo[5] ?></th>
+                        <td><a target="_blank" href="archivos.php?dni=<?php echo $arreglo[1]; ?>&fecha=<?php echo $arreglo[5]; ?>" class="btn btn-warning">Archivos</a></td>
+                      
 
                     </tr>
 

@@ -11,7 +11,7 @@
 
             <div class="col-4">
 
-                <h1>Ingrese datos</h1>
+                <h1 class="text-center">Registrar Paciente:</h1>
 
 
                 <form action="enviar_formulario.php" method="post">
@@ -71,8 +71,7 @@
                         <th>Primer Apellido</th>
                         <th>Segundo Apellido</th>
                         <th>Numero</th>
-                        <th></th>
-                        <th></th>
+
                     </tr>
 
 

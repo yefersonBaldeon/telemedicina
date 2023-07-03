@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-06-2023 a las 03:30:03
+-- Tiempo de generación: 03-07-2023 a las 02:41:34
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -45,7 +45,8 @@ INSERT INTO `consulta` (`id`, `DNI`, `años`, `peso`, `temperatura`, `fecha`) VA
 (2, '55645646', '16', '61', '16', '2023-06-17'),
 (4, '16465161', '49', '49', '49', '2023-06-20'),
 (5, '55455554', '16', '36', '62', '2023-06-19'),
-(6, '16465161', '54', '45', '16', '2023-06-21');
+(6, '16465161', '54', '45', '16', '2023-06-21'),
+(7, '55455554', '80', '35', '39', '2023-07-02');
 
 -- --------------------------------------------------------
 
@@ -67,14 +68,15 @@ CREATE TABLE `documentos` (
 --
 
 INSERT INTO `documentos` (`id`, `DNI`, `titulo`, `nombre_archivo`, `ruta_archivo`, `fecha`) VALUES
-(1, '16465161', 'solicitud', 'Semana 10 y 11 GESTIÓN EMPRESARIAL (1).pdf', 'carpeta_destino/Semana 10 y 11 GESTIÓN EMPRESARIAL', '2023-06-17'),
-(2, '16465161', 'solicitud', '44 (1).pdf', 'carpeta_destino/44 (1).pdf', '2023-06-17'),
-(3, '16465161', 'solicitud', '44 (1).pdf', 'carpeta_destino/44 (1).pdf', '2023-06-17'),
 (4, '55645646', 'solicitud', 'task2-BALDEON.docx', 'carpeta_destino/task2-BALDEON.docx', '2023-06-17'),
-(5, '16465161', 'solicitud', 'luis.xlsx', 'carpeta_destino/luis.xlsx', '2023-06-17'),
 (6, '16465161', 'solicitud', 'task2-BALDEON.docx', 'carpeta_destino/task2-BALDEON.docx', '2023-06-20'),
 (7, '55455554', 'solicitud', 'CARÁTULA.docx', 'carpeta_destino/CARÁTULA.docx', '2023-06-19'),
-(8, '16465161', 'solicitud', 'actividad-clase-7-extraer-texto_1504a04d-ca1c-4423', 'carpeta_destino/actividad-clase-7-extraer-texto_15', '2023-06-21');
+(8, '16465161', 'solicitud', 'actividad-clase-7-extraer-texto_1504a04d-ca1c-4423', 'carpeta_destino/actividad-clase-7-extraer-texto_15', '2023-06-21'),
+(9, '16465161', 'ecografia ojo', 'Resumen.docx', 'carpeta_destino/Resumen.docx', '2023-06-17'),
+(10, '55455554', 'solicitud', 'manual_de_normas_apa_7a_completo.pdf', 'carpeta_destino/manual_de_normas_apa_7a_completo.p', '2023-07-02'),
+(11, '55455554', 'ecografia del pie', 'actividad-clase-6-capitalizar-texto_5c710b60-0e62-', 'carpeta_destino/actividad-clase-6-capitalizar-text', '2023-07-02'),
+(12, '55455554', 'ecografia sangre', 'luis 45.xlsx', 'carpeta_destino/luis 45.xlsx', '2023-07-02'),
+(13, '55455554', 'ecografia torax', 'peliculas-de-netflix_fe8390ff-ec52-4b81-a6e5-d6572', 'carpeta_destino/peliculas-de-netflix_fe8390ff-ec52', '2023-07-02');
 
 -- --------------------------------------------------------
 
@@ -130,13 +132,13 @@ ALTER TABLE `pacientes`
 -- AUTO_INCREMENT de la tabla `consulta`
 --
 ALTER TABLE `consulta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `documentos`
 --
 ALTER TABLE `documentos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

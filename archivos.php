@@ -67,7 +67,7 @@
 
                     <div class="mb-3">
                         <label for="titulo" class="form-label">Titulo: </label>
-                        <input type="text" class="form-control" id="auto" name="titulo" maxlength="15">
+                        <input type="text" class="form-control" id="auto" name="titulo" maxlength="30">
                     </div>
 
                     <div class="mb-3">
@@ -76,7 +76,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="usuario" class="form-label">Solicitud para la videollamada:</label>
+                        <label for="usuario" class="form-label">Archivos del paciente :</label>
                         <input type="file" class="form-control " id="auto" name="archivo" required>
                     </div>
 

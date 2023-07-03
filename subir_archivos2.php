@@ -15,9 +15,9 @@ if (!$conexion) {
 if (isset($_FILES['archivo'])) {
     $nombreArchivo = $_FILES['archivo']['name'];
     $rutaArchivo = $_FILES['archivo']['tmp_name'];
-    $DNI=$_POST["dni"];
-    $titulo=$_POST["titulo"];
-    $fecha=$_POST["fecha"];
+    $DNI = $_POST["dni"];
+    $titulo = $_POST["titulo"];
+    $fecha = $_POST["fecha"];
 
     $destino = 'carpeta_destino/' . $nombreArchivo;
     if (move_uploaded_file($rutaArchivo, $destino)) {
@@ -25,7 +25,6 @@ if (isset($_FILES['archivo'])) {
         if (mysqli_query($conexion, $consulta)) {
 
             echo 'El archivo se ha subido y guardado correctamente.';
-            //   header("Location: index.php");
         } else {
             echo 'Error al guardar el archivo en la base de datos: ' . mysqli_error($conexion);
         }

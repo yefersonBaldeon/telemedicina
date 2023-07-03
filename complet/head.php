@@ -13,30 +13,30 @@
 </head>
 
 
-<nav class="navbar navbar-expand-lg navbar-success bg-success">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
   <div class="container-fluid">
-
-
     <a class="navbar-brand" href="index.php">
       <img src="Escudo_UNCP.png" alt="" style="width: 10%; height: auto;">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
+          <a class="nav-link" href="index.php">Home</a>
         </li>
-
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./search.php">Pacientes</a>
+          <a class="nav-link" href="search.php">Pacientes</a>
         </li>
-
-
       </ul>
-
     </div>
   </div>
 </nav>
+
+<style>
+  .navbar-nav .nav-link:hover {
+    color: #fff !important;
+    background-color: #28a745 !important;
+  }
+</style>

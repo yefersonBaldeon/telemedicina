@@ -43,7 +43,7 @@
                     $rutaArchivo = $fila['ruta_archivo'];
                     $titulo = $fila['titulo'];
 
-                    echo '<li>' . $titulo . '  // Nombre del archivo: '.$nombreArchivo.' <a href="ver_archivo.php?archivo=' . $rutaArchivo . '" target="_blank">Descargar</a></li>';
+                    echo '<li>' . $titulo . '  // Nombre del archivo: ' . $nombreArchivo . ' <a href="ver_archivo.php?archivo=' . $rutaArchivo . '" target="_blank">Descargar</a></li>';
                 }
 
                 mysqli_close($conexion);
@@ -55,6 +55,14 @@
             </div>
 
             <hr>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button>
+
+
+
+            
             <div>
                 <h1 class="mb-3">Subir archivos del paciente:</h1>
 
